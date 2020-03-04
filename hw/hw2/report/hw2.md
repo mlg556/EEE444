@@ -196,3 +196,9 @@ I have also found that for $\gamma_r = 4.445$ this range reduces to $4.42 < \bet
 $$
 \gamma_r = 4.445, \quad \beta = 4.43
 $$
+
+# Notes
+
+All related files can be found at:
+
+https://github.com/mlg556/EEE444
