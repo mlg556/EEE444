@@ -97,6 +97,8 @@ Combining both conditions, for the controller to be robustly stabilizing $(C,P_{
 
 # PART III
 
+## Padé Approximation Approach
+
 Noting that $P_1$ is a time-delayed plant, we can deconstruct it as:
 $$
 P_1 = \frac{e^{- h s}}{0.25 s - 1} = P_0P_d
@@ -162,6 +164,24 @@ $$
 C(s) = \frac{15s+1}{4.5s}, \qquad P(s) = \frac{e^{- h s}}{0.25 s - 1}
 $$
 
+\newpage
+
+
+
+## Bode Plot Approach
+
+As an alternative approach, I directly constructed and analyzed the Bode plot of the system to judge stability of the system where:
+$$
+C(s) = \frac{15s+1}{4.5s}, \qquad P(s) = \frac{e^{- h s}}{0.25 s - 1}
+$$
+
+![Bode plot of the system.](bode.pdf)
+
+Defining the phase crossover frequency $\omega_{pc}$ as the frequency where phase shift is equal to -180, The *Bode Stability Criterion* states that if at $|H(j\omega_{pc})| < 0{dB}$, then the system is stable.
+
+Figure 5 shows that this is indeed the case where $\omega_{pc} = 28.6286$ and $|H(j\omega_{pc})| = -1.34{dB}$.
+
+Both approaches agree that the system is robustly stable.
 
 \newpage
 
